@@ -1,4 +1,4 @@
 const config = {
-    baseUrl: '/admin/',
+    baseUrl: '/',
 };
 export default config;
