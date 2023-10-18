@@ -14,6 +14,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import config from '../coreFiles/config';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -295,7 +296,7 @@ export default function Sidebar(props) {
                   <div className='dropdown'>
                     {ArrowDropDown.map((list) => (
                       <ul>
-                        <li><Link to={`` + lists.link}>{list.menu1}</Link></li>
+                        <li><Link to={`${config.baseUrl}` + lists.link}>{list.menu1}</Link></li>
                         {/* <li>{list.menu2}</li>
                         <li>{list.menu3}</li> */}
                       </ul>
